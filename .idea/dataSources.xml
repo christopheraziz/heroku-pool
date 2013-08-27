@@ -5,6 +5,7 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:mypool_production</jdbc-url>
       <user-name>mypool</user-name>
+      <user-password>dfe1dfdadffcdfdbdfdbdfc6dfdcdffbdf9fdfd9dfe8df93dfc4dfefdf9adfd3dfdddfc0dffedfdfdfcbdf92df9ddfc0dffbdff2</user-password>
       <libraries>
         <library>
           <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/postgresql-driver-license.txt</url>
@@ -18,6 +19,7 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:mypool_development</jdbc-url>
       <user-name>mypool</user-name>
+      <user-password>dfe8dfdfdfd8dfd8dfc3dfdedfc5df98df93df98</user-password>
       <libraries>
         <library>
           <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/postgresql-driver-license.txt</url>
