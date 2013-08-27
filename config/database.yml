@@ -17,12 +17,10 @@
 development:
   adapter: postgresql
   encoding: unicode
+  database: mypool_development
   pool: 5
-  database: d65dmmdvfdqtlh
-  username: emswsrdgrdaofh
-  password: KpVqqlvQ5sB9nE0ywjTua87jQX
-  host: ec2-54-221-199-33.compute-1.amazonaws.com
-  port: 5432
+  username: postgres
+  password: 
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -56,7 +54,9 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: mypool_production
+  database: d65dmmdvfdqtlh
   pool: 5
-  username: mypool
-  password:
+  username: emswsrdgrdaofh
+  password: KpVqqlvQ5sB9nE0ywjTua87jQX
+  host: ec2-54-221-199-33.compute-1.amazonaws.com
+  port: 5432
