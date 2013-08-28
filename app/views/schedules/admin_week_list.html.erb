@@ -1,0 +1,26 @@
+<div class="row-fluid">
+	<div class="span5">
+      	<div class="well">
+			 <p> stuff </p>
+		</div>
+	</div>
+
+
+	<div class="span5">
+	    <div class="hero-unit">
+            <h3>Available Weeks</h3>
+              <% if @playable_weeks %>
+                <% @playable_weeks.each do |f| %>
+                  <div class="row-fluid">
+                    <div class="span12">
+                      <div class="well">
+                        <%= link_to(f.id, :controller => 'schedules', :action => 'adminlist', :id => f.id, :this_pool => @this_pool) %>
+                      </div>
+                    </div>
+                  </div>
+                <% end %>
+              <% end %>
+		</div>
+	</div>
+
+</div>

@@ -1,10 +1,15 @@
 Mypool::Application.routes.draw do
+  get "access/admin"
+  get "access/login"
+  get "access/signup"
+  get "access/join_pool"
+  get "access/menu"
   get "welcome/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'welcome#index'
+  root 'access#login'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -54,4 +59,6 @@ Mypool::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  get ':controller(/:action(/:id(.:format)))'
+  post ':controller(/:action(/:id(.:format)))'
 end

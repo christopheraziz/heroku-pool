@@ -1,0 +1,13 @@
+<div class="row-fluid">
+  <div class="span8 offset2">
+    <div class="hero-unit">
+      <% if @record %>
+    	<% @record.each do |g| %>
+    		<p><%= g %></p>
+    	<% end %>
+      <% end %>
+    	<%= @test %>
+      <p>Your picks have been made</p>
+    </div>
+  </div>
+</div>

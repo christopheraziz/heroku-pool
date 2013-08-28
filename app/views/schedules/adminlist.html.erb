@@ -1,0 +1,48 @@
+<div class="row-fluid">
+	<div class="span6 offset3">
+      	<%= form_for(:picks, :url =>{:action => 'updateweek', :week_id => @week_id, :this_pool => @this_pool_id}) do |t| %>
+		  <table class="table table-condensed">
+		  	<tr>
+			  	<th><div class="text-center"><h3>Visitor</h3></div></th>
+			  	<th></th>
+			  	<th></th>
+			  	<th><div class="text-center"><h3>Home</h3></div></th>				
+		  	</tr>
+		  	<tr>
+		  		<td colspan="4">
+		  			<div class="text-center">
+		  				<span class="label label-info"><h6>Complete all Games</h6></span>
+		  			</div>
+		  		</td>
+		  	</tr>
+		  	<% @update_games.each do |schedule| %>
+	  			<% visitor_id = schedule.id.to_s %>
+  				<% visitor_team = schedule.visitor %>
+  				<% visitor_scrubbed = visitor_team.sub(" ", "_") %>
+			  	<tr>
+			  		<td>
+			  			<label for='<%= "picks_"+visitor_id+"_"+visitor_scrubbed.downcase %>' class="text-right">
+			  				<h4><%= schedule.visitor %></h4>
+			  			</label>
+			  		</td>
+			  		<td>
+			  			<%= t.radio_button(schedule.id, schedule.visitor) %>
+			  		</td>
+			  		<td>
+			  			<%= t.radio_button(schedule.id, schedule.home) %>
+			  		</td>
+			  		<td>
+		  				<% home_id = schedule.id.to_s %>
+		  				<% home_team = schedule.home %>
+		  				<% home_scrubbed = home_team.sub(" ", "_") %>
+			  			<label for='<%= "picks_"+home_id+"_"+home_scrubbed.downcase %>'>
+			  				<h4><%= schedule.home %></h4>
+			  			</label>
+			  		</td>	
+			  	</tr>
+		  	<% end %>
+		  </table>
+		  <%= submit_tag("Make your picks!", :class => "btn btn-primary") %>	
+		<% end %>
+	</div>
+</div>

@@ -1,0 +1,44 @@
+<div class="row-fluid">
+  <div class="span5">
+    <div class="well">
+      <div class="thumbnail">
+        <img data-src="holder.js/160x120" alt="">
+        <div class="caption">
+          <h3>Thumbnail label</h3>
+          <p>Dis is some shit right here</p>
+          <%= @id_test %>
+          <%= form_for(:poolpicks, :url =>{:action => 'join_pool', :method => 'post'}) do |form| %>
+              <h5>Available pools</h5>
+              <% if @input %>
+                  <% @input.each do |p| %>
+                      <p><label class="control-label" for="<%= "poolpicks_"+p.id.to_s %>">
+                        <%= p.pool_name %>
+                        <%= form.check_box(p.id, {}) %>
+                      </label></p>
+                  <% end %>
+                  <%= submit_tag("Join pool", :class => "btn btn-primary") %>
+              <% end %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="span5">
+    <div class="hero-unit">
+      <div class="btn-group">
+        <a class="btn btn-large dropdown-toggle" data-toggle="dropdown" href="#">
+          Action
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+          <% @pools.each do |inhere| %>
+              <li><%= link_to(inhere.pool_name, :controller => 'schedules', :action => 'week_list', :id => inhere.pool_id) %></li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>

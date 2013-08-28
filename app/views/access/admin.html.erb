@@ -1,0 +1,41 @@
+<div class="row-fluid">
+  <div class="span5">
+    <div class="well">
+      <h3>Pools</h3>
+      <h5>Create pool</h5>
+      <%= form_for(:new_pool, :class => 'form-horizontal', :url =>{:controller => 'pools', :action => 'make_pool'}) do |t| %>
+          <div class="control-group">
+            <label class="control-label" for="inputPoolName">Pool Name</label>
+            <div class="controls">
+              <%= t.text_field(:pool_name, :class => "input-medium") %>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="controls">
+              <%= submit_tag("Create Pool", :class => "btn btn-primary") %>
+            </div>
+          </div>
+      <% end %>
+      <h5>Available pools</h5>
+      <% @pools.each do |p| %>
+          <p><%= p.pool_name %></p>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="span5">
+    <div class="hero-unit">
+      <div class="btn-group">
+        <a class="btn btn-large dropdown-toggle" data-toggle="dropdown" href="#">
+          Action
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+          <% @pools.each do |inhere| %>
+              <li><%= link_to(inhere.pool_name, :controller => 'schedules', :action => 'admin_week_list', :id => inhere.id) %></li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

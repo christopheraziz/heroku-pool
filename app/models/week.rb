@@ -6,4 +6,9 @@ class Week < ActiveRecord::Base
 
   has_many :weeks_pools
   has_many :pools, :through => :weeks_pools
+
+  def self.get_weeks
+    return Week.all
+  end
+
 end
