@@ -95,6 +95,8 @@ ActiveRecord::Schema.define(version: 20130827233148) do
   create_table "weeks_pools", id: false, force: true do |t|
     t.integer  "week_id"
     t.integer  "pool_id"
+    t.integer  "user_id"
+    t.string   "week_winner"
     t.boolean  "complete"
     t.datetime "created_at"
     t.datetime "updated_at"

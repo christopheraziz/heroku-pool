@@ -5,6 +5,8 @@ class CreateWeeksPools < ActiveRecord::Migration
       t.index :pool_id
       t.belongs_to :week
       t.belongs_to :pool
+      t.belongs_to :user
+      t.string "week_winner"
       t.boolean "complete"
       t.timestamps
     end
