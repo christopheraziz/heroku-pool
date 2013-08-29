@@ -3,7 +3,7 @@
     <div class="hero-unit">
       <% if @record %>
     	<% @record.each do |g| %>
-    		<p><%= g %></p>
+    		<p><%= g.winner %></p>
     	<% end %>
       <% end %>
     	<%= @test %>

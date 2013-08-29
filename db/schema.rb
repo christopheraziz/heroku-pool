@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(version: 20130827233148) do
     t.integer  "pool_id"
     t.integer  "week_id"
     t.string   "pick"
-    t.boolean  "winner"
+    t.string   "winner"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

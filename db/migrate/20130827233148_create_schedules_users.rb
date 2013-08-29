@@ -8,7 +8,7 @@ class CreateSchedulesUsers < ActiveRecord::Migration
       t.belongs_to :pool
       t.belongs_to :week, :null => true
       t.string "pick"
-      t.boolean "winner", :null => true
+      t.string "winner", :null => true
       t.timestamps
     end
   end
