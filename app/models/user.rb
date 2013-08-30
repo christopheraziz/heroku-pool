@@ -8,13 +8,16 @@ class User < ActiveRecord::Base
   has_many :users_pools
   has_many :pools, :through => :users_pools
 
+
   def self.authenticate(email="", password="")
-    user = User.find_by_email(email)
+    user = self.find_by_email(email)
     if user && user.password == password
       return user
     else
       return false
     end
   end
+
+
 
 end

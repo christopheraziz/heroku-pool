@@ -7,7 +7,8 @@ class AccessController < ApplicationController
   def menu
     #display text and links
     id_array =Array.new
-
+    user_info = User.find(session[:user_id])
+    @image_file = user_info.image
     @playable_weeks = Week.get_weeks
     user_pools = UsersPool.where(:user_id => session[:user_id])
     if user_pools
@@ -98,16 +99,6 @@ class AccessController < ApplicationController
           join.pool_id = t.first
           join.pool_name = name.pool_name
           join.save
-          counter = 1
-          (1..number_weeks.count).each do |insert|
-            insert = UsersWeek.new
-            insert.user_id = session[:user_id]
-            insert.pool_id = params[:poolpicks].first.first
-            insert.week_id = counter
-            insert.complete = false
-            insert.save
-            counter += 1
-          end
         end
       end
       redirect_to(:action => 'menu')
@@ -117,6 +108,15 @@ class AccessController < ApplicationController
 
   end
 
+  def upload_image
+    uploaded = params[:upload][:picture]
+    full_path = uploaded.original_filename
+    get_user = User.find(session[:user_id])
+    get_user.update(image: full_path.to_s)
+    File.open(Rails.root.join('app', 'assets','images', uploaded.original_filename), 'wb') do |file|
+      file.write(uploaded.read)
+    end
+  end
   def logout
     session[:user_id] = nil
     session[:user_name] = nil
