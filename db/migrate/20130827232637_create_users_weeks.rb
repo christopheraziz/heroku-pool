@@ -7,6 +7,7 @@ class CreateUsersWeeks < ActiveRecord::Migration
       t.belongs_to :user
       t.belongs_to :week
       t.belongs_to :pool
+      t.string "name"
       t.integer "total_games"
       t.integer "total_wins"
       t.integer "total_losses"

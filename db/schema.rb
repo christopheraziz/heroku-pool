@@ -71,6 +71,7 @@ ActiveRecord::Schema.define(version: 20130827233148) do
     t.integer  "user_id"
     t.integer  "week_id"
     t.integer  "pool_id"
+    t.string   "name"
     t.integer  "total_games"
     t.integer  "total_wins"
     t.integer  "total_losses"

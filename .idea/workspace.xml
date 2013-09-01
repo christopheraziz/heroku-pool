@@ -19,6 +19,7 @@
     <file path="/users_week.rb" changelist="ca8059b9-3c9b-4b94-801f-aef8a0a33278" time="1378010364422" ignored="false" />
     <file path="/weeks_pool.rb" changelist="ca8059b9-3c9b-4b94-801f-aef8a0a33278" time="1377930120483" ignored="false" />
     <file path="/week_list.html.erb" changelist="ca8059b9-3c9b-4b94-801f-aef8a0a33278" time="1378011391076" ignored="false" />
+    <file path="/20130827232637_create_users_weeks.rb" changelist="ca8059b9-3c9b-4b94-801f-aef8a0a33278" time="1378012315550" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,10 +71,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="week_list.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="week_list.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/schedules/week_list.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="55" selection-start="514" selection-end="514" vertical-scroll-proportion="0.6169451">
+            <state line="16" column="55" selection-start="514" selection-end="514" vertical-scroll-proportion="-7.385714">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20130827232637_create_users_weeks.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20130827232637_create_users_weeks.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="20" selection-start="270" selection-end="270" vertical-scroll-proportion="0.33224756">
               <folding />
             </state>
           </provider>
@@ -116,7 +126,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/schedules/your_picks.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20130827232724_create_weeks_pools.rb" />
         <option value="$PROJECT_DIR$/app/controllers/pools_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/main.html.erb" />
@@ -132,6 +141,7 @@
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/models/users_week.rb" />
         <option value="$PROJECT_DIR$/app/views/schedules/week_list.html.erb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130827232637_create_users_weeks.rb" />
       </list>
     </option>
   </component>
@@ -797,35 +807,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="uml://RailsDependency/#mypool">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>RailsDependency</ID>
-          <OriginalElement>#mypool</OriginalElement>
-          <nodes>
-            <node x="0.0" y="225.0">User</node>
-            <node x="0.0" y="75.0">WeeksPool</node>
-            <node x="131.0" y="150.0">Week</node>
-            <node x="0.0" y="150.0">Schedule</node>
-            <node x="141.0" y="75.0">UsersPool</node>
-            <node x="163.0" y="0.0">UsersWeek</node>
-            <node x="0.0" y="0.0">SchedulesUser</node>
-            <node x="105.0" y="225.0">Pool</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="-425.0" y="-79.0" />
-          <SelectedNodes>
-            <node>Schedule</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Migration fields</Category>
-            <Category>Association fields</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://DATABASE/a6b4380c-d93b-4385-b664-ea66bc7c8ac3">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -1201,7 +1182,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/schedules/week_list.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="55" selection-start="514" selection-end="514" vertical-scroll-proportion="0.6169451">
+        <state line="16" column="55" selection-start="514" selection-end="514" vertical-scroll-proportion="-7.385714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130827232637_create_users_weeks.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="20" selection-start="270" selection-end="270" vertical-scroll-proportion="0.33224756">
           <folding />
         </state>
       </provider>
