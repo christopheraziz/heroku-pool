@@ -8,7 +8,10 @@ class SchedulesController < ApplicationController
   end
 
   def week_list
-    @playable_weeks = Week.get_weeks
+    @playable_weeks = Week.get_playable_weeks(params[:id])
+    @completed_week_stats = UsersWeek.get_completed_week_stats(params[:id])
+
+
     session[:pool_id] = params[:id]
     @this_pool = params[:id]
   end
@@ -20,7 +23,7 @@ class SchedulesController < ApplicationController
   end
 
   def admin_week_list
-    @playable_weeks = Week.get_weeks
+    @playable_weeks = Week.all
     @this_pool = params[:id]
   end
 

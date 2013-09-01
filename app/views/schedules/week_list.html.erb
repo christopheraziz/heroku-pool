@@ -1,7 +1,24 @@
 <div class="row-fluid">
 	<div class="span5">
       	<div class="well">
-			 <p> stuff </p>
+         <p> stuff </p>
+          <% if @completed_week_stats %>
+            <% @completed_week_stats.each do |key, value| %>
+                  <div class="row-fluid">
+                    <div class="span12">
+
+
+                      <div class="well">
+                        <% value[0].each do |stat| %>
+                            <p><%= stat.total_wins  %><%=   %></p><br />
+                        <% end %>
+                      </div>
+
+
+                    </div>
+                  </div>
+              <% end %>
+          <% end %>
 		</div>
 	</div>
 

@@ -14,7 +14,7 @@
           <%= submit_tag("Change Photo", :class => "btn btn-primary") %>
       <% end %>
 
-      <%= form_for(:poolpicks, :url =>{:action => 'join_pool', :method => 'post'}) do || %>
+      <%= form_for(:poolpicks, :url =>{:action => 'join_pool', :method => 'post'}) do |form| %>
           <h5>Available pools</h5>
           <% if @input %>
               <% @input.each do |p| %>

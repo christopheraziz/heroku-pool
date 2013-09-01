@@ -21,6 +21,7 @@ class Schedule < ActiveRecord::Base
     user_ids = Array.new
     winners = Array.new
     game_ids = Array.new
+
     picks.each do |key, value|
       game_ids.unshift(key)
       winners.unshift(value)
@@ -31,45 +32,17 @@ class Schedule < ActiveRecord::Base
       user_ids.unshift(u.user_id)
     end
 
-    #update all winners for the week for the entire pool
-    index = 0
-    game_ids.each do |temp|
-      games = nil
-      string_temp = winners[index]
-      games = SchedulesUser.where(:schedule_id => temp, :week_id => week_id, :pool_id => pool_id)
-      games.update_all(winner: string_temp)
-      index += 1
+    #update all team winners for the week for the entire pool
+    picks.each do |key, value|
+      games = SchedulesUser.where(:schedule_id => key, :week_id => week_id, :pool_id => pool_id)
+      games.update_all(winner: value)
     end
 
     #generate user and pool stats for the week for each user
     #making new entries for SchedulesUser and  UsersWeek
     user_ids.each do |user|
-      @win_counter = 0
-      test_for_win = SchedulesUser.where(:user_id => user, :week_id => week_id, :pool_id => pool_id)
-      test_for_win.each do |test|
-         if test.pick == test.winner
-           @win_counter += 1
-         end
-      end
-      percentage = 0
-      losses = 0
-      losses = number_games - @win_counter
-      if @win_counter == 0
-        percentage = 0
-      else
-        percentage = ((@win_counter * 100) /  number_games)
-      end
-      insert = nil
-      insert = UsersWeek.new
-      insert.user_id = user
-      insert.week_id = week_id
-      insert.pool_id = pool_id
-      insert.total_games = number_games
-      insert.total_wins = @win_counter
-      insert.total_losses = losses
-      insert.win_percentage = percentage
-      insert.complete = true
-      insert.save
+      @win_counter = SchedulesUser.get_wins(user, week_id, pool_id)
+      UsersWeek.insert_user_stats(user, week_id, pool_id, number_games, @win_counter)
     end
 
     #determine winner of the pool for the week and
@@ -112,16 +85,7 @@ class Schedule < ActiveRecord::Base
       temp_winner = user.first_name
       temp_user_id = winning_id.first
     end
-    complete_week = WeeksPool.new
-    complete_week.pool_id = pool_id
-    complete_week.week_id = week_id
-    complete_week.user_id = temp_user_id
-    complete_week.week_winner = temp_winner
-    complete_week.complete = true
-    complete_week.save
-
-    ha_ha = Array.new
-    ha_ha.push(@win_counter)
+    WeeksPool.insert_week(pool_id, week_id, temp_user_id, temp_winner)
 
     return winners_hash
   end

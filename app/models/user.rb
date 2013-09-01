@@ -11,13 +11,19 @@ class User < ActiveRecord::Base
 
   def self.authenticate(email="", password="")
     user = self.find_by_email(email)
-    if user && user.password == password
+    if user.password == password
       return user
     else
       return false
     end
   end
 
+  def self.get_user_photo(user_id="")
+    return self.find(user_id).image
+  end
 
+  def self.get_user_name(user_id='')
+    return self.find(user_id).first_name
+  end
 
 end

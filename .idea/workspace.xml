@@ -6,15 +6,19 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/seeds.rb" changelist="ca8059b9-3c9b-4b94-801f-aef8a0a33278" time="1377706827056" ignored="false" />
     <file path="/routes.rb" changelist="ca8059b9-3c9b-4b94-801f-aef8a0a33278" time="1377708567754" ignored="false" />
-    <file path="/access_controller.rb" changelist="ca8059b9-3c9b-4b94-801f-aef8a0a33278" time="1377839020407" ignored="false" />
+    <file path="/access_controller.rb" changelist="ca8059b9-3c9b-4b94-801f-aef8a0a33278" time="1377976644347" ignored="false" />
     <file path="/login.html.erb" changelist="ca8059b9-3c9b-4b94-801f-aef8a0a33278" time="1377712652717" ignored="false" />
-    <file path="/schedules_user.rb" changelist="ca8059b9-3c9b-4b94-801f-aef8a0a33278" time="1377719326984" ignored="false" />
-    <file path="/menu.html.erb" changelist="ca8059b9-3c9b-4b94-801f-aef8a0a33278" time="1377845498459" ignored="false" />
-    <file path="/schedules_controller.rb" changelist="ca8059b9-3c9b-4b94-801f-aef8a0a33278" time="1377722849361" ignored="false" />
+    <file path="/schedules_user.rb" changelist="ca8059b9-3c9b-4b94-801f-aef8a0a33278" time="1377927551372" ignored="false" />
+    <file path="/menu.html.erb" changelist="ca8059b9-3c9b-4b94-801f-aef8a0a33278" time="1377924816786" ignored="false" />
+    <file path="/schedules_controller.rb" changelist="ca8059b9-3c9b-4b94-801f-aef8a0a33278" time="1377976676486" ignored="false" />
     <file path="/your_picks.html.erb" changelist="ca8059b9-3c9b-4b94-801f-aef8a0a33278" time="1377749107286" ignored="false" />
-    <file path="/schedule.rb" changelist="ca8059b9-3c9b-4b94-801f-aef8a0a33278" time="1377829944055" ignored="false" />
+    <file path="/schedule.rb" changelist="ca8059b9-3c9b-4b94-801f-aef8a0a33278" time="1377928031811" ignored="false" />
     <file path="/20130827232724_create_weeks_pools.rb" changelist="ca8059b9-3c9b-4b94-801f-aef8a0a33278" time="1377805464398" ignored="false" />
-    <file path="/user.rb" changelist="ca8059b9-3c9b-4b94-801f-aef8a0a33278" time="1377832539626" ignored="false" />
+    <file path="/user.rb" changelist="ca8059b9-3c9b-4b94-801f-aef8a0a33278" time="1378009537488" ignored="false" />
+    <file path="/week.rb" changelist="ca8059b9-3c9b-4b94-801f-aef8a0a33278" time="1377967978723" ignored="false" />
+    <file path="/users_week.rb" changelist="ca8059b9-3c9b-4b94-801f-aef8a0a33278" time="1378010364422" ignored="false" />
+    <file path="/weeks_pool.rb" changelist="ca8059b9-3c9b-4b94-801f-aef8a0a33278" time="1377930120483" ignored="false" />
+    <file path="/week_list.html.erb" changelist="ca8059b9-3c9b-4b94-801f-aef8a0a33278" time="1378011391076" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +46,43 @@
       <file leaf-file-name="access_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/access_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="14" selection-start="505" selection-end="505" vertical-scroll-proportion="0.0">
+            <state line="23" column="21" selection-start="522" selection-end="522" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="schedules_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/schedules_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="30" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="schedules_user.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/schedules_user.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="49" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="week_list.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/schedules/week_list.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="55" selection-start="514" selection-end="514" vertical-scroll-proportion="0.6169451">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users_week.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/users_week.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="40" selection-start="1201" selection-end="1201" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -51,25 +91,16 @@
       <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0">
+            <state line="19" column="37" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/access/menu.html.erb">
+      <file leaf-file-name="week.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/week.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="27" selection-start="1242" selection-end="1243" vertical-scroll-proportion="0.3468208">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/main.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="23" selection-start="88" selection-end="88" vertical-scroll-proportion="25.744186">
+            <state line="11" column="25" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -85,22 +116,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-        <option value="$PROJECT_DIR$/app/views/access/login.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/week.rb" />
-        <option value="$PROJECT_DIR$/app/models/schedules_user.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/schedules_controller.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130827233148_create_schedules_users.rb" />
         <option value="$PROJECT_DIR$/app/views/schedules/your_picks.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20130827232724_create_weeks_pools.rb" />
         <option value="$PROJECT_DIR$/app/controllers/pools_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/schedule.rb" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/access_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/main.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/access/menu.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/weeks_pool.rb" />
+        <option value="$PROJECT_DIR$/app/models/schedule.rb" />
+        <option value="$APPLICATION_HOME_DIR$/rubystubs19/class.rb" />
+        <option value="$PROJECT_DIR$/app/models/week.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/access_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/schedules_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/schedules_user.rb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/models/users_week.rb" />
+        <option value="$PROJECT_DIR$/app/views/schedules/week_list.html.erb" />
       </list>
     </option>
   </component>
@@ -143,7 +174,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -420,18 +451,18 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="reference.settings.ide.settings.web.browsers" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -547,7 +578,7 @@
     </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
       <JSRemoteDebuggerConfigurationSettings>
-        <option name="engineId" />
+        <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSRemoteDebuggerConfigurationSettings>
       <method />
@@ -766,67 +797,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/schedules_user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="17" selection-start="460" selection-end="460" vertical-scroll-proportion="0.036916394">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://Ruby/Schedule">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>Ruby</ID>
-          <OriginalElement>Schedule</OriginalElement>
-          <nodes>
-            <node x="" y="">Schedule</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="43.0" y="1.5" />
-          <SelectedNodes />
-          <Categories />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://DATABASE/6d6050b8-12c1-45d0-b482-41634fc1b74f">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>6d6050b8-12c1-45d0-b482-41634fc1b74f</OriginalElement>
-          <nodes />
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="795.5" y="447.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="14" selection-start="570" selection-end="578" vertical-scroll-proportion="0.7752443">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130827232724_create_weeks_pools.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="30" selection-start="281" selection-end="281" vertical-scroll-proportion="0.29533115">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/week.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://RailsDependency/#mypool">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -844,14 +814,15 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="-425.0" y="-79.5" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-425.0" y="-79.0" />
           <SelectedNodes>
             <node>Schedule</node>
           </SelectedNodes>
           <Categories>
-            <Category>Association fields</Category>
             <Category>Migration fields</Category>
+            <Category>Association fields</Category>
           </Categories>
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
@@ -879,11 +850,11 @@
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_range</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_foreign_server_name_index</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_shseclabel</node>
-            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_trigger_tgconstraint_index</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_constraint_conname_nsp_index</node>
+            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_trigger_tgconstraint_index</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.public.weeks_id_seq</node>
-            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_opclass_am_name_nsp_index</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.information_schema.column_domain_usage</node>
+            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_opclass_am_name_nsp_index</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_locks</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_ts_parser</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_class_oid_index</node>
@@ -907,20 +878,20 @@
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.information_schema.foreign_table_options</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_tablespace</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.information_schema._pg_foreign_tables</node>
+            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_trigger_oid_index</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_views</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_amop_oid_index</node>
-            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_trigger_oid_index</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_stat_all_indexes</node>
-            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_stat_bgwriter</node>
-            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_authid_oid_index</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_class</node>
+            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_authid_oid_index</node>
+            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_stat_bgwriter</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_rewrite_rel_rulename_index</node>
-            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_largeobject_loid_pn_index</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_type</node>
-            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_stat_activity</node>
+            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_largeobject_loid_pn_index</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.information_schema.user_mappings</node>
-            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_am_oid_index</node>
+            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_stat_activity</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_opfamily</node>
+            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_am_oid_index</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_attribute_relid_attnum_index</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.information_schema.role_column_grants</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.information_schema.table_privileges</node>
@@ -933,19 +904,19 @@
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_extension</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_stat_database_conflicts</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_default_acl_oid_index</node>
-            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_statio_sys_indexes</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_constraint_contypid_index</node>
+            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_statio_sys_indexes</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_trigger_tgrelid_tgname_index</node>
-            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_ts_config_cfgname_index</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.information_schema.enabled_roles</node>
-            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_seclabel_object_index</node>
+            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_ts_config_cfgname_index</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_range_rngtypid_index</node>
-            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.information_schema.sql_languages</node>
+            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_seclabel_object_index</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.information_schema.foreign_server_options</node>
+            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.information_schema.sql_languages</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_ts_template_oid_index</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_statio_user_tables</node>
-            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_stat_user_indexes</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_cast_source_target_index</node>
+            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_stat_user_indexes</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_operator</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_am_name_index</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_stat_xact_sys_tables</node>
@@ -954,8 +925,8 @@
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_shdepend_depender_index</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_aggregate</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_user_mappings</node>
-            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_namespace_nspname_index</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.information_schema.constraint_table_usage</node>
+            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_namespace_nspname_index</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.information_schema.views</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_stat_user_functions</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.information_schema.check_constraint_routine_usage</node>
@@ -1056,53 +1027,53 @@
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_opfamily_am_name_nsp_index</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.information_schema.referential_constraints</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_statio_all_indexes</node>
-            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_enum</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_proc_proname_args_nsp_index</node>
+            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_enum</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_type_typname_nsp_index</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.information_schema.parameters</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_am</node>
-            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.information_schema.role_routine_grants</node>
-            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_collation_oid_index</node>
-            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.information_schema.domain_udt_usage</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_foreign_data_wrapper_oid_index</node>
+            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.information_schema.domain_udt_usage</node>
+            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_collation_oid_index</node>
+            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.information_schema.role_routine_grants</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_db_role_setting</node>
-            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_foreign_server</node>
-            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_tablespace_spcname_index</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.public.users_id_seq</node>
-            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_conversion_name_nsp_index</node>
-            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_database_datname_index</node>
+            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_tablespace_spcname_index</node>
+            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_foreign_server</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_database_oid_index</node>
+            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_database_datname_index</node>
+            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_conversion_name_nsp_index</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_type_oid_index</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_db_role_setting_databaseid_rol_index</node>
-            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.information_schema.domain_constraints</node>
-            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_opclass_oid_index</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_largeobject_metadata_oid_index</node>
+            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_opclass_oid_index</node>
+            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.information_schema.domain_constraints</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.information_schema.triggered_update_columns</node>
-            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_attrdef_oid_index</node>
-            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_ts_parser_prsname_index</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.information_schema.sql_parts</node>
+            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_ts_parser_prsname_index</node>
+            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_attrdef_oid_index</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_ts_dict</node>
-            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_constraint_conrelid_index</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_ts_dict_dictname_index</node>
-            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_constraint_oid_index</node>
+            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_constraint_conrelid_index</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_pltemplate_name_index</node>
+            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_constraint_oid_index</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_statio_all_sequences</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_cast_oid_index</node>
-            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_index_indexrelid_index</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_database</node>
+            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_index_indexrelid_index</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_proc_oid_index</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_statio_user_sequences</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.information_schema.triggers</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_authid_rolname_index</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.public.schedules_id_seq</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.public.users_weeks</node>
-            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.information_schema.view_routine_usage</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_language_oid_index</node>
+            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.information_schema.view_routine_usage</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.public.schedules_users</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_user_mapping_user_server_index</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_foreign_data_wrapper</node>
-            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_stat_user_tables</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.information_schema.schemata</node>
+            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_stat_user_tables</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_stat_xact_user_functions</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_statio_all_tables</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.public.pools</node>
@@ -1115,12 +1086,12 @@
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.information_schema.key_column_usage</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.information_schema.routines</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_ts_dict_oid_index</node>
-            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_auth_members</node>
-            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.information_schema.user_mapping_options</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_statio_user_indexes</node>
+            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.information_schema.user_mapping_options</node>
+            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_auth_members</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_user_mapping</node>
-            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_stat_all_tables</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_group</node>
+            <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_stat_all_tables</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_enum_typid_label_index</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.pg_catalog.pg_roles</node>
             <node x="" y="">a6b4380c-d93b-4385-b664-ea66bc7c8ac3.table:pool_development.information_schema.sql_implementation_info</node>
@@ -1131,67 +1102,106 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.2528884462151395" x="3474.7255284955204" y="2934.505337619392" />
+          <settings layout="Hierarchic Group" zoom="0.2528884462151395" x="3475.0" y="2935.0" />
           <SelectedNodes />
           <Categories>
-            <Category>Key columns</Category>
             <Category>Columns</Category>
+            <Category>Key columns</Category>
           </Categories>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/schedule.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="4" selection-start="3477" selection-end="3477" vertical-scroll-proportion="0.48678413">
-          <folding />
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/schedules/your_picks.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="20" selection-start="150" selection-end="150" vertical-scroll-proportion="0.19362187">
-          <folding />
-        </state>
+        <state line="5" column="20" selection-start="150" selection-end="150" vertical-scroll-proportion="0.19362187" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/schedules_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="37" selection-start="888" selection-end="888" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="13" column="22" selection-start="641" selection-end="641" vertical-scroll-proportion="0.48678413" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+    <entry file="file://$APPLICATION_HOME_DIR$/rubystubs19/class.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/access_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="14" selection-start="505" selection-end="505" vertical-scroll-proportion="0.0">
+        <state line="117" column="14" selection-start="4008" selection-end="4008" vertical-scroll-proportion="0.33333334">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/main.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="23" selection-start="88" selection-end="88" vertical-scroll-proportion="25.744186">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="22" selection-start="641" selection-end="641" vertical-scroll-proportion="0.48678413">
+        <state line="4" column="98" selection-start="129" selection-end="129" vertical-scroll-proportion="-1.3687861">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/access/menu.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="27" selection-start="1242" selection-end="1243" vertical-scroll-proportion="0.3468208">
+        <state line="18" column="39" selection-start="661" selection-end="661" vertical-scroll-proportion="3.6046512">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/weeks_pool.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="22" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/schedule.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="38" selection-start="1092" selection-end="1092" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/access_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="21" selection-start="522" selection-end="522" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/schedules_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="30" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/schedules_user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="49" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/week.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="25" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="37" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/users_week.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="40" selection-start="1201" selection-end="1201" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/schedules/week_list.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="55" selection-start="514" selection-end="514" vertical-scroll-proportion="0.6169451">
           <folding />
         </state>
       </provider>

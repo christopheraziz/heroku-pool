@@ -6,10 +6,9 @@ class AccessController < ApplicationController
 
   def menu
     #display text and links
-    id_array =Array.new
-    user_info = User.find(session[:user_id])
-    @image_file = user_info.image
-    @playable_weeks = Week.get_weeks
+    @image_file = User.get_user_photo(session[:user_id])
+
+    id_array = Array.new
     user_pools = UsersPool.where(:user_id => session[:user_id])
     if user_pools
       user_pools.each do |p|
@@ -17,13 +16,12 @@ class AccessController < ApplicationController
       end
     end
     test_pools = Pool.where.not(:id => id_array)
-    @id_test = id_array
-    @pools = user_pools
     @input = test_pools
+    @pools = user_pools
   end
 
   def admin
-    @weeks = Week.get_weeks
+    @weeks = Week.all
     @pools = Pool.all
   end
 
@@ -88,10 +86,8 @@ class AccessController < ApplicationController
   end
 
   def join_pool
-    test_debug = true
-    if test_debug
+    if params[:poolpicks]
       name = Pool.find(params[:poolpicks].first.first)
-      number_weeks = Week.all
       params[:poolpicks].each do |t|
         if t.last == "1"
           join = UsersPool.new
@@ -101,11 +97,8 @@ class AccessController < ApplicationController
           join.save
         end
       end
-      redirect_to(:action => 'menu')
-    else
-      @test = params[:poolpicks]
-    end #test_debug
-
+    end
+    redirect_to(:action => 'menu')
   end
 
   def upload_image
@@ -116,6 +109,7 @@ class AccessController < ApplicationController
     File.open(Rails.root.join('app', 'assets','images', uploaded.original_filename), 'wb') do |file|
       file.write(uploaded.read)
     end
+    redirect_to(:action => 'menu')
   end
   def logout
     session[:user_id] = nil
