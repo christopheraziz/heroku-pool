@@ -1,42 +1,88 @@
 <div class="row-fluid">
+
+  <div class="span5">
+    <div class="hero-unit text-center">
+      <h3>Available Weeks</h3>
+      <% if @playable_weeks %>
+          <% @playable_weeks.each do |f| %>
+              <div class="row-fluid">
+                <div class="span12">
+                  <div class="well">
+                    <%= link_to('Week: '+f.id.to_s, {:controller => 'schedules', :action => 'list', :id => f.id, :this_pool => @this_pool}, class: "btn btn-large btn-primary",) %>
+                    Week starts: <%= f.week_start  %>
+                  </div>
+                </div>
+              </div>
+          <% end %>
+      <% end %>
+
+      <div class="well">
+        <h3>Your Picks</h3>
+        <div class="accordion" id="accordion2">
+        <% @user_picks.each do |key, value| %>
+            <div class="accordion-group">
+                <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                    <%= "Week: "+key.to_s %>
+                    </a>
+                </div>
+
+
+                <div id="collapseOne" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                        <% value.each do |game| %>
+                            <br><%= game.pick %><br />
+                        <% end %>
+                    </div>
+                </div>
+            </div>
+        <% end %>
+
+        </div>
+       </div>
+
+    </div>
+  </div>
+
+
+
+
 	<div class="span5">
-      	<div class="well">
-         <p> stuff </p>
+      	<div class="well text-center">
+          <h3>Completed Weeks</h3>
           <% if @completed_week_stats %>
             <% @completed_week_stats.each do |key, value| %>
                   <div class="row-fluid">
                     <div class="span12">
 
 
-                      <div class="well">
-                        <% value[0].each do |stat| %>
-                            <p><%= stat.total_wins  %><%=   %></p><br />
-                        <% end %>
-                      </div>
+                    <div class="well">
+                        <table class="table table-bordered table-striped">
+                          <h4>Week: <%= key %></h4>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Total Wins</th>
+                                    <th>Win Percentage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <% value[0].each do |stat| %>
+                                <tr>
+                                    <td><%= stat.name  %></td>
+                                    <td><%= stat.total_wins  %></td>
+                                    <td><%= stat.win_percentage  %>%</td>
+                                </tr>
+                            <% end %>
+                            <tbody>
+                        </table>
+                    </div>
 
 
                     </div>
                   </div>
               <% end %>
           <% end %>
-		</div>
-	</div>
-
-
-	<div class="span5">
-	    <div class="hero-unit">
-            <h3>Available Weeks</h3>
-              <% if @playable_weeks %>
-                <% @playable_weeks.each do |f| %>
-                  <div class="row-fluid">
-                    <div class="span12">
-                      <div class="well">
-                        <%= link_to(f.id, :controller => 'schedules', :action => 'list', :id => f.id, :this_pool => @this_pool) %>
-                      </div>
-                    </div>
-                  </div>
-                <% end %>
-              <% end %>
 		</div>
 	</div>
 

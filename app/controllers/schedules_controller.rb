@@ -10,8 +10,21 @@ class SchedulesController < ApplicationController
   def week_list
     @playable_weeks = Week.get_playable_weeks(params[:id])
     @completed_week_stats = UsersWeek.get_completed_week_stats(params[:id])
+    @all_picks = SchedulesUser.get_picks(session[:user_id], params[:id])
 
+    stat_hash = Hash.new
 
+    num_complete = @all_picks.count("DISTINCT week_id")
+    (1..num_complete).each do |week|
+      user_picks = Array.new
+      @all_picks.each do |pick|
+        if pick.week_id == week
+          user_picks.push(pick)
+          stat_hash[week] = user_picks
+        end
+      end
+    end
+    @user_picks = stat_hash
     session[:pool_id] = params[:id]
     @this_pool = params[:id]
   end

@@ -10,10 +10,12 @@ class UsersWeek < ActiveRecord::Base
     else
       percentage = ((total_wins * 100) /  total_games)
     end
+    name = User.get_user_name(user_id)
     insert = self.new
     insert.user_id = user_id
     insert.week_id = week_id
     insert.pool_id = pool_id
+    insert.name = name
     insert.total_games = total_games
     insert.total_wins = total_wins
     insert.total_losses = losses

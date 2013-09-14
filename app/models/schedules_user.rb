@@ -13,5 +13,8 @@ class SchedulesUser < ActiveRecord::Base
     end
     return win_counter
   end
+  def self.get_picks(user_id="", pool_id="")
+    return self.where(:user_id => user_id, :pool_id => pool_id).order('schedule_id ASC')
+  end
 
 end

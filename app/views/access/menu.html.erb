@@ -16,6 +16,7 @@
 
       <%= form_for(:poolpicks, :url =>{:action => 'join_pool', :method => 'post'}) do |form| %>
           <h5>Available pools</h5>
+          <%= @last_winner.week_id %>
           <% if @input %>
               <% @input.each do |p| %>
                   <p><label class="control-label" for="<%= "poolpicks_"+p.id.to_s %>">

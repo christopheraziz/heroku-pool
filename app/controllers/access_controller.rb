@@ -7,7 +7,6 @@ class AccessController < ApplicationController
   def menu
     #display text and links
     @image_file = User.get_user_photo(session[:user_id])
-
     id_array = Array.new
     user_pools = UsersPool.where(:user_id => session[:user_id])
     if user_pools
@@ -16,6 +15,8 @@ class AccessController < ApplicationController
       end
     end
     test_pools = Pool.where.not(:id => id_array)
+    @last_winner = WeeksPool.where(:pool_id => id_array, :complete => true).max
+
     @input = test_pools
     @pools = user_pools
   end

@@ -2411,6 +2411,7 @@
       <column name="user_id" sqlType="int4" length="10" precision="0" nullable="true" jdbcType="4"/>
       <column name="week_id" sqlType="int4" length="10" precision="0" nullable="true" jdbcType="4"/>
       <column name="pool_id" sqlType="int4" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="name" sqlType="varchar" length="255" precision="0" nullable="true" jdbcType="12"/>
       <column name="total_games" sqlType="int4" length="10" precision="0" nullable="true" jdbcType="4"/>
       <column name="total_wins" sqlType="int4" length="10" precision="0" nullable="true" jdbcType="4"/>
       <column name="total_losses" sqlType="int4" length="10" precision="0" nullable="true" jdbcType="4"/>

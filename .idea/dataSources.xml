@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="3547148639">
+  <component name="DataSourceManagerImpl" format="xml" hash="2702213229">
     <data-source source="LOCAL" name="Rails mypool: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="6d6050b8-12c1-45d0-b482-41634fc1b74f">
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:mypool_production</jdbc-url>
